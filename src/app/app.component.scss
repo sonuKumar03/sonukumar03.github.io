@@ -1,0 +1,11 @@
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+}
+article {
+  width: var(--content-width);
+}
+.grow-1 {
+  flex-grow: 1;
+}
