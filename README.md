@@ -22,3 +22,11 @@ npm run build
 ```
 
 The build outputs to `docs/`, which GitHub Pages serves from the `master` branch.
+
+## Test
+
+```sh
+npm test
+```
+
+Checks the Resume viewer's PDF handling and loading-failure fallback.
