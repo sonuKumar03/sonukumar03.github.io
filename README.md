@@ -1,13 +1,19 @@
-# Sonu Kumar — portfolio
+# Sonu Kumar
 
-Personal portfolio built with Angular 17, TypeScript, and SCSS. Content is drawn from the July 2026 résumé and public GitHub profile.
+My personal website, featuring my projects and engineering work.
 
-## Develop
+[Visit the website](https://sonukumar03.github.io/)
+
+Built with Angular, TypeScript, and SCSS.
+
+## Run locally
 
 ```sh
 npm ci
 npm start
 ```
+
+Open [localhost:4200](http://localhost:4200/).
 
 ## Build
 
@@ -15,14 +21,4 @@ npm start
 npm run build
 ```
 
-The production site is generated directly in `docs/`, ready for a GitHub Pages configuration that serves that folder. Building updates the committed site artifacts; it does not publish them.
-
-## Update content
-
-- `src/app/app.component.html`: portfolio copy, project links, and experience.
-- `src/app/app.component.scss`: page layout and responsive styles.
-- `src/styles.scss`: theme and typography.
-- `src/assets/sonu-kumar-resume.pdf`: downloadable résumé.
-- `src/index.html`: metadata and page title.
-
-The current layout uses a profile column and a project index, with no placeholder project visuals. Project descriptions follow the project READMEs; impact figures are reported resume claims. The page omits conflicting education dates; the downloadable PDF is the original supplied document.
+The build outputs to `docs/`, which GitHub Pages serves from the `master` branch.
