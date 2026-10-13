@@ -6,6 +6,6 @@ The palette is warm charcoal (#1b1d1b), pale text (#e9e9e0), olive-gray secondar
 
 The desktop container is 1120px, with a 340px profile column, a 100px gap, and 48px outer gutters. At 1050px the profile becomes 260px; below 760px the page stacks, using 28px gutters. The profile remains in document flow and never covers the content.
 
-Projects lead with names, concrete purposes, and technologies. Descriptions are grounded in the local project READMEs. Reported impact stays inside experience as readable prose. The original July 2026 PDF remains the downloadable Resume.
+Projects lead with names, concrete purposes, and technologies. Descriptions are grounded in the local project READMEs. Reported impact stays inside experience as readable prose. Resume links open a new tab through `assets/resume.html`, which fetches the current frontend PDF from resume-latex and gives it the PDF MIME type for the browser viewer. Loading failures retain a GitHub fallback link.
 
 Native anchors, semantic headings, skip navigation, keyboard-visible focus, and reduced-motion support remain. External navigation uses ordinary links. This is a code-first local layout experiment requested by the owner; no image comp or screenshots are presented as product evidence.

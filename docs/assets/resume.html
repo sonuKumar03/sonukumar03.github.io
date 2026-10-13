@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sonu Kumar — Resume</title>
+    <style>
+      :root { color-scheme: dark; background: #1b1d1b; color: #e9e9e0; font: 16px/1.6 sans-serif; }
+      body { max-width: 600px; margin: 64px auto; padding: 0 24px; }
+      a { color: #e0b79a; }
+      a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+    </style>
+  </head>
+  <body>
+    <p id="status" role="status">Opening Resume…</p>
+    <a href="https://github.com/sonuKumar03/resume-latex/blob/main/pdf/front_end_resume.pdf">View on GitHub</a>
+    <noscript><p>Enable JavaScript to open the PDF here, or use the GitHub link.</p></noscript>
+    <script>
+      async function openResume() {
+        try {
+          const response = await fetch('https://raw.githubusercontent.com/sonuKumar03/resume-latex/main/pdf/front_end_resume.pdf', { cache: 'no-store' });
+          if (!response.ok) throw new Error('Resume request failed');
+          const bytes = await response.arrayBuffer();
+          if (new TextDecoder().decode(bytes.slice(0, 5)) !== '%PDF-') throw new Error('Invalid PDF');
+          // GitHub serves PDFs as octet-stream; set the MIME type for the browser viewer.
+          const pdf = new Blob([bytes], { type: 'application/pdf' });
+          window.location.replace(URL.createObjectURL(pdf));
+        } catch {
+          document.getElementById('status').textContent = 'Could not load the Resume. You can view it on GitHub below.';
+        }
+      }
+      openResume();
+    </script>
+  </body>
+</html>
